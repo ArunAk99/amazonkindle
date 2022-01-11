@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			ML APP for sentiment analysis
+		</div>
+		<h2>sentiment analysis for amazon kindle books</h2>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;"><b>Review</b></p>
+	<div class="results">
+
+
+	<h2 style="color:green;">Positive</h2>
+	{elif prediction == 0}
+	<h2 style="color:blue;">Neutral </h2>
+        {elif prediction == -1}
+        <h2 style="color:red;">Negative</h2>
+
+	</div>
+
+</body>
+</html>
